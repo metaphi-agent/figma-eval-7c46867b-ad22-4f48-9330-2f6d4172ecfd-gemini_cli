@@ -1,0 +1,22 @@
+[
+  { "id": "1:3", "name": "Colors", "x": 44, "y": 455, "w": 275, "h": 380, "type": "Colors" },
+  { "id": "1:63", "name": "ProductsList", "x": 641, "y": 455, "w": 275, "h": 380, "type": "ProductsList" },
+  { "id": "1:116", "name": "Progressbars", "x": 939, "y": 455, "w": 275, "h": 380, "type": "Progressbars" },
+  { "id": "1:156", "name": "Sizes", "x": 44, "y": 255, "w": 275, "h": 180, "type": "Sizes" },
+  { "id": "1:183", "name": "Support", "x": 342, "y": 655, "w": 275, "h": 180, "type": "Support" },
+  { "id": "1:196", "name": "MonthlyData", "x": 939, "y": 255, "w": 275, "h": 180, "type": "MonthlyData" },
+  { "id": "1:211", "name": "DailyProgress", "x": 939, "y": 55, "w": 275, "h": 180, "type": "DailyProgress" },
+  { "id": "1:243", "name": "Price", "x": 44, "y": 55, "w": 275, "h": 180, "type": "Price" },
+  { "id": "1:265", "name": "DoubleGraph", "x": 342, "y": 455, "w": 275, "h": 180, "type": "DoubleGraph" },
+  { "id": "1:295", "name": "Product1", "x": 342, "y": 55, "w": 275, "h": 380, "type": "Product1" },
+  { "id": "1:318", "name": "Product2", "x": 641, "y": 55, "w": 275, "h": 380, "type": "Product2" },
+  { "id": "1:355", "name": "HexagonPath", "x": 1536, "y": 252, "w": 275, "h": 380, "type": "HexagonPath" },
+  { "id": "1:374", "name": "Schedule", "x": 2133, "y": 52, "w": 275, "h": 580, "type": "Schedule" },
+  { "id": "1:495", "name": "Dots", "x": 1835, "y": 252, "w": 275, "h": 380, "type": "Dots" },
+  { "id": "1:538", "name": "Donut", "x": 1238, "y": 652, "w": 275, "h": 380, "type": "Donut" },
+  { "id": "1:568", "name": "Login", "x": 1238, "y": 252, "w": 275, "h": 180, "type": "Login" },
+  { "id": "1:580", "name": "UserCart", "x": 1238, "y": 452, "w": 275, "h": 180, "type": "UserCart" },
+  { "id": "1:596", "name": "MapData", "x": 1835, "y": 52, "w": 275, "h": 180, "type": "MapData" },
+  { "id": "1:603", "name": "ProductWide", "x": 1835, "y": 652, "w": 573, "h": 380, "type": "ProductWide" },
+  { "id": "1:624", "name": "ProductWideSmall", "x": 1238, "y": 52, "w": 573, "h": 180, "type": "ProductWideSmall" }
+]
