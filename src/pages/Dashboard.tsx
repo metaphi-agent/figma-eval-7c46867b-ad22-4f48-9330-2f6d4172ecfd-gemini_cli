@@ -1,40 +1,64 @@
 import React from 'react';
-import widgetsData from '../data/widgets.json';
-import { WidgetRenderer } from '../components/widgets/WidgetRenderer';
-import { Card } from '../components/ui/Card';
+import { WidgetCard } from '../components/WidgetCard';
+import { ColorsWidget } from '../components/widgets/ColorsWidget';
+import { ProductsListWidget } from '../components/widgets/ProductsListWidget';
+import { SizesWidget } from '../components/widgets/SizesWidget';
+import { LoginWidget } from '../components/widgets/LoginWidget';
+import { ProductWidget } from '../components/widgets/ProductWidget';
+import { GraphWidget } from '../components/widgets/GraphWidget';
+import { FormWidget } from '../components/widgets/FormWidget';
+import { CalendarWidget } from '../components/widgets/CalendarWidget';
+import { PieWidget } from '../components/widgets/PieWidget';
+import { ProductCard2Widget } from '../components/widgets/ProductCard2Widget';
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen bg-[#1E1E1E] overflow-auto"> 
-      {/* Background color r:0.117 -> #1E1E1E */}
-      <div 
-        className="relative mx-auto origin-top-left"
-        style={{ 
-          width: '3617px', 
-          height: '2275px',
-          // Optional: Scale down for easier viewing if needed, 
-          // but keeping 1:1 for fidelity as requested.
-        }}
-      >
-        {/* Background Rectangle 1 - Color r:0.704 -> #B3B3B3 */}
-        <div className="absolute inset-0 bg-[#B3B3B3]/10 pointer-events-none" /> {/* Actually it's probably just the canvas bg */}
+    <div className="min-h-screen p-8 flex justify-center bg-background text-white">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl w-full auto-rows-[180px] grid-flow-row-dense">
+        
+        {/* Row 1 */}
+        <WidgetCard title="Colors" colSpan={1} rowSpan={2} className="bg-white text-black">
+          <ColorsWidget />
+        </WidgetCard>
+        
+        <WidgetCard title="Products" colSpan={1} rowSpan={2} className="bg-white text-black">
+            <ProductsListWidget />
+        </WidgetCard>
 
-        {widgetsData.map((widget) => (
-          <div
-            key={widget.id}
-            style={{
-              position: 'absolute',
-              left: `${widget.x}px`,
-              top: `${widget.y}px`,
-              width: `${widget.w}px`,
-              height: `${widget.h}px`,
-            }}
-          >
-            <Card className="h-full w-full">
-              <WidgetRenderer type={widget.type} />
-            </Card>
-          </div>
-        ))}
+        <WidgetCard title="Sizes" colSpan={1} rowSpan={1} className="bg-white text-black">
+             <SizesWidget />
+        </WidgetCard>
+
+         <WidgetCard title="Login" colSpan={1} rowSpan={1} className="bg-white text-black">
+             <LoginWidget />
+        </WidgetCard>
+        
+        {/* Row 2 */}
+         <WidgetCard title="Total Views" colSpan={1} rowSpan={2} className="bg-white text-black">
+             <GraphWidget />
+        </WidgetCard>
+
+         <WidgetCard title="Featured" colSpan={1} rowSpan={2} className="bg-white text-black">
+             <ProductWidget />
+        </WidgetCard>
+
+        {/* Row 3 - Big Form */}
+        <WidgetCard title="Contact Us" colSpan={2} rowSpan={2} className="bg-white text-black">
+             <FormWidget />
+        </WidgetCard>
+
+        <WidgetCard title="Calendar" colSpan={1} rowSpan={2} className="bg-white text-black">
+            <CalendarWidget />
+        </WidgetCard>
+        
+        <WidgetCard title="Traffic" colSpan={1} rowSpan={2} className="bg-white text-black">
+             <PieWidget />
+        </WidgetCard>
+
+        <WidgetCard title="New Arrival" colSpan={1} rowSpan={2} className="bg-white text-black">
+             <ProductCard2Widget />
+        </WidgetCard>
+
       </div>
     </div>
   );
